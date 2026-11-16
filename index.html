@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez Atelya et contactez notre équipe.">
+  <title>Atelya — Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#accueil" aria-label="Atelya, accueil">Atelya<span>.</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">Bienvenue chez Atelya</p>
+        <h1>Des idées qui prennent vie.</h1>
+        <p class="intro">Nous imaginons des expériences et des projets qui vous ressemblent. Découvrez notre univers et parlons de vos idées.</p>
+        <a class="button" href="#apropos">Découvrir Atelya</a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span>A</span></div>
+    </section>
+
+    <section class="about section" id="apropos">
+      <p class="eyebrow">À propos</p>
+      <h2>Un projet, une belle histoire.</h2>
+      <p>Atelya est un projet réalisé dans le cadre de notre projet informatique. Cette page constitue une première base de présentation, que vous pouvez adapter avec vos textes, vos images et vos activités.</p>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Écrivons la suite ensemble.</h2>
+      <p>Une question ou une idée à partager ? Envoyez-nous un message.</p>
+      <form class="contact-form">
+        <label for="name">Votre nom</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="email">Votre adresse e-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button class="button" type="submit">Envoyer le message</button>
+      </form>
+      <p class="form-note">Le formulaire est visuel pour le moment : il faudra le relier à un serveur pour enregistrer ou envoyer les messages.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Atelya — Projet informatique</p>
+  </footer>
+</body>
+</html>
