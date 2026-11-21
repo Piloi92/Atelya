@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les ateliers – Atelya</title>
+  <meta name="description" content="Trouvez un atelier d'artisan près de chez vous : céramique, textile, bois et rencontres.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html" aria-current="page">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="recherche-ateliers">
+      <nav class="fil-ariane" aria-label="Fil d'Ariane">
+        <ol>
+          <li><a href="index.html">Accueil</a></li>
+          <li aria-current="page">Les ateliers</li>
+        </ol>
+      </nav>
+
+      <div class="introduction">
+        <div>
+          <p class="rubrique">À deux pas de chez vous</p>
+          <h1>Votre prochain beau geste.</h1>
+          <p>Poussez la porte d'un atelier, rencontrez un artisan et découvrez le plaisir de créer de vos mains.</p>
+        </div>
+        <img src="images/ateliers.jpg" alt="Atelier d'artisan baigné de lumière" width="290" height="190">
+      </div>
+
+      <form class="criteres" action="ateliers.html" method="get" role="search">
+        <div class="champ">
+          <label for="lieu">Ville ou code postal</label>
+          <input type="text" id="lieu" name="lieu" value="Lyon, 69001" autocomplete="address-level2">
+        </div>
+        <div class="champ">
+          <label for="rayon">Zone de recherche</label>
+          <select id="rayon" name="rayon">
+            <option value="10">Dans un rayon de 10 km</option>
+            <option value="25" selected>Dans un rayon de 25 km</option>
+            <option value="50">Dans un rayon de 50 km</option>
+          </select>
+        </div>
+        <div class="champ">
+          <label for="theme">Thème</label>
+          <select id="theme" name="theme">
+            <option value="">Tous les savoir-faire</option>
+            <option value="ceramique">Céramique</option>
+            <option value="textile">Textile</option>
+            <option value="bois">Bois</option>
+            <option value="rencontre">Rencontre</option>
+          </select>
+        </div>
+        <div class="champ champ-dates">
+          <label for="date-debut">Dates</label>
+          <input type="date" id="date-debut" name="du" value="2026-11-14" aria-label="Du">
+          <input type="date" id="date-fin" name="au" value="2026-11-30" aria-label="Au">
+        </div>
+        <button type="submit" class="bouton">Rechercher <img src="images/icones/search.svg" alt="" width="20" height="20"></button>
+      </form>
+    </section>
+
+    <section class="resultats" aria-labelledby="titre-resultats">
+      <div class="entete-section">
+        <h2 id="titre-resultats">4 expériences autour de Lyon</h2>
+        <label for="tri">Trier par</label>
+        <select id="tri" name="tri">
+          <option>Date la plus proche</option>
+          <option>Prix croissant</option>
+          <option>Places disponibles</option>
+        </select>
+      </div>
+
+      <ul class="filtres-actifs" aria-label="Filtres actifs">
+        <li><a href="ateliers.html" class="filtre-actif" aria-label="Retirer le filtre Lyon + 25 km">Lyon + 25 km ×</a></li>
+        <li><a href="ateliers.html" aria-label="Retirer le filtre 14–30 nov. 2026">14–30 nov. 2026 ×</a></li>
+        <li><a href="ateliers.html?disponible=1">Places disponibles</a></li>
+        <li><a href="ateliers.html" class="lien">Tout effacer</a></li>
+      </ul>
+
+      <div class="resultats-contenu">
+        <div class="liste-evenements">
+          <ul class="grille">
+            <li>
+              <article class="carte-atelier">
+                <img src="images/atelier-ceramique.jpg" alt="Atelier de céramique" width="440" height="250">
+                <p class="carte-atelier-entete"><span class="etiquette">Céramique</span> <span class="prix">65 € / pers.</span></p>
+                <h3><a href="atelier.html">Les mains dans la terre</a></h3>
+                <p>Lyon 2e · Atelier Roussel<br><time datetime="2026-11-14T10:00">Sam. 14 novembre · 10h–12h30</time></p>
+                <p class="disponibilite">4 places restantes · <a href="atelier.html">Découvrir ↗</a></p>
+              </article>
+            </li>
+            <li>
+              <article class="carte-atelier">
+                <img src="images/atelier-tissage.jpg" alt="Atelier de tissage" width="440" height="250">
+                <p class="carte-atelier-entete"><span class="etiquette">Textile</span> <span class="prix">75 € / pers.</span></p>
+                <h3><a href="atelier.html">Tisser son premier ouvrage</a></h3>
+                <p>Lyon 1er · Maison Lisière<br><time datetime="2026-11-15T14:00">Dim. 15 novembre · 14h–17h</time></p>
+                <p class="disponibilite">6 places restantes · <a href="atelier.html">Découvrir ↗</a></p>
+              </article>
+            </li>
+            <li>
+              <article class="carte-atelier">
+                <img src="images/atelier-bois.jpg" alt="Atelier de sculpture sur bois" width="440" height="250">
+                <p class="carte-atelier-entete"><span class="etiquette">Bois</span> <span class="prix">59 € / pers.</span></p>
+                <h3><a href="atelier.html">Une cuillère, un morceau de bois</a></h3>
+                <p>Villeurbanne · L'établi<br><time datetime="2026-11-21T09:30">Sam. 21 novembre · 9h30–12h30</time></p>
+                <p class="disponibilite">3 places restantes · <a href="atelier.html">Découvrir ↗</a></p>
+              </article>
+            </li>
+            <li>
+              <article class="carte-atelier">
+                <img src="images/marche-createurs.jpg" alt="Marché des créateurs" width="440" height="250">
+                <p class="carte-atelier-entete"><span class="etiquette">Rencontre</span> <span class="prix">Gratuit</span></p>
+                <h3><a href="atelier.html">Le marché des créateurs</a></h3>
+                <p>Lyon 4e · Place de la Croix-Rousse<br><time datetime="2026-11-22T10:00">Dim. 22 novembre · 10h–18h</time></p>
+                <p class="disponibilite">Entrée libre · <a href="atelier.html">Découvrir ↗</a></p>
+              </article>
+            </li>
+          </ul>
+          <p class="note"><em>Vous avez découvert toutes les expériences pour ces critères.</em></p>
+        </div>
+
+        <aside class="autour-de-vous" aria-labelledby="titre-carte">
+          <h2 id="titre-carte" class="visuellement-cache">Autour de vous</h2>
+          <figure class="carte">
+            <img src="images/carte-lyon.svg" alt="Carte de Lyon situant les 4 lieux numérotés" width="324" height="280">
+            <figcaption><em>Carte indicative · Les lieux autour de Lyon</em></figcaption>
+          </figure>
+          <ol class="liste-lieux">
+            <li>Lyon 2e · Atelier Roussel</li>
+            <li>Lyon 1er · Maison Lisière</li>
+            <li>Villeurbanne · L'établi</li>
+            <li>Lyon 4e · Place de la Croix-Rousse</li>
+          </ol>
+          <section class="encart">
+            <p class="rubrique">Une première fois ?</p>
+            <h3>Vous êtes au bon endroit.</h3>
+            <p>Nos ateliers sont accessibles aux débutants. Matériel fourni, petits groupes et artisans passionnés : il ne manque que vous.</p>
+            <a href="faq.html#ateliers" class="bouton bouton-secondaire">Comment ça se passe ? <img src="images/icones/arrow-right.svg" alt="" width="20" height="20"></a>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <section class="appel">
+      <div>
+        <p class="rubrique">Offrir un moment, pas seulement un objet</p>
+        <h2>Une expérience qui reste.</h2>
+        <p>Avec la carte cadeau, laissez vos proches choisir le savoir-faire qui leur donne envie.</p>
+      </div>
+      <a href="carte-cadeau.html" class="bouton">Découvrir la carte cadeau <img src="images/icones/arrow-right.svg" alt="" width="20" height="20"></a>
+    </section>
+  </main>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

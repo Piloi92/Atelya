@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panier & commande – Atelya</title>
+  <meta name="description" content="Votre panier Atelya : articles, coordonnées, livraison et paiement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <nav class="fil-ariane" aria-label="Fil d'Ariane">
+      <ol>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="boutique.html">La boutique</a></li>
+        <li aria-current="page">Panier &amp; commande</li>
+      </ol>
+    </nav>
+
+    <header class="entete-page">
+      <div>
+        <p class="rubrique">Presque chez vous</p>
+        <h1>Votre panier</h1>
+      </div>
+    </header>
+
+    <form class="commande" action="commande-confirmee.html" method="post">
+      <div class="commande-saisie">
+        <section class="panier" aria-labelledby="titre-articles">
+          <div class="entete-section">
+            <h2 id="titre-articles">Vos articles</h2>
+            <p>3 pièces · 1 artisan</p>
+          </div>
+          <ul class="liste-panier">
+            <li class="article-panier">
+              <img src="images/bol-aube.jpg" alt="" width="106" height="114">
+              <div>
+                <h3><a href="produit.html">Bol Aube</a></h3>
+                <p>Camille Roussel · Lyon</p>
+                <p class="note">Ivoire moucheté · 38 € / pièce</p>
+                <button type="submit" name="retirer" value="bol-aube" class="bouton-texte lien">Retirer</button>
+              </div>
+              <div class="quantite">
+                <button type="button" aria-label="Diminuer la quantité de Bol Aube">−</button>
+                <label for="qte-bol" class="visuellement-cache">Quantité de Bol Aube</label>
+                <input type="number" id="qte-bol" name="quantite[bol-aube]" value="2" min="1">
+                <button type="button" aria-label="Augmenter la quantité de Bol Aube">+</button>
+              </div>
+              <p class="prix">76 €</p>
+            </li>
+            <li class="article-panier">
+              <img src="images/vase-sillage.jpg" alt="" width="106" height="114">
+              <div>
+                <h3><a href="produit.html">Vase Sillage</a></h3>
+                <p>Camille Roussel · Lyon</p>
+                <p class="note">Terre cuite naturelle · 64 € / pièce</p>
+                <button type="submit" name="retirer" value="vase-sillage" class="bouton-texte lien">Retirer</button>
+              </div>
+              <div class="quantite">
+                <button type="button" aria-label="Diminuer la quantité de Vase Sillage">−</button>
+                <label for="qte-vase" class="visuellement-cache">Quantité de Vase Sillage</label>
+                <input type="number" id="qte-vase" name="quantite[vase-sillage]" value="1" min="1">
+                <button type="button" aria-label="Augmenter la quantité de Vase Sillage">+</button>
+              </div>
+              <p class="prix">64 €</p>
+            </li>
+          </ul>
+          <a class="lien" href="boutique.html">← Continuer à découvrir la boutique</a>
+        </section>
+
+        <fieldset class="etape-commande">
+          <legend>01 · Vos coordonnées</legend>
+          <p class="note">Déjà client ? <a class="lien" href="connexion.html">Connectez-vous</a> · Les champs marqués d'un * sont obligatoires.</p>
+          <div class="champs-ligne">
+            <div class="champ">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" value="Louise" autocomplete="given-name" required>
+            </div>
+            <div class="champ">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" value="Bernard" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="champs-ligne">
+            <div class="champ">
+              <label for="email">Adresse e-mail *</label>
+              <input type="email" id="email" name="email" value="louise.bernard@exemple.fr" autocomplete="email" required>
+            </div>
+            <div class="champ">
+              <label for="telephone">Téléphone *</label>
+              <input type="tel" id="telephone" name="telephone" value="06 12 34 56 78" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="champ">
+            <label for="adresse">Adresse *</label>
+            <input type="text" id="adresse" name="adresse" value="18 rue des Capucins" autocomplete="address-line1" required>
+          </div>
+          <div class="champs-ligne">
+            <div class="champ">
+              <label for="code-postal">Code postal *</label>
+              <input type="text" id="code-postal" name="code_postal" value="69001" inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code" required>
+            </div>
+            <div class="champ">
+              <label for="ville">Ville *</label>
+              <input type="text" id="ville" name="ville" value="Lyon" autocomplete="address-level2" required>
+            </div>
+          </div>
+          <div class="champ">
+            <label for="pays">Pays *</label>
+            <select id="pays" name="pays" autocomplete="country-name">
+              <option selected>France</option>
+              <option>Belgique</option>
+              <option>Suisse</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="etape-commande">
+          <legend>02 · Votre livraison</legend>
+          <label class="option-choix">
+            <input type="radio" name="livraison" value="domicile" checked>
+            <span><strong>À domicile — Colissimo</strong><br>Livraison estimée du 20 au 23 octobre 2026</span>
+            <span class="prix">6 €</span>
+          </label>
+          <label class="option-choix">
+            <input type="radio" name="livraison" value="relais">
+            <span><strong>En point relais</strong><br>3 à 5 jours ouvrés après expédition</span>
+            <span class="prix">4 €</span>
+          </label>
+          <p class="note">Vos pièces voyagent ensemble depuis l'atelier de Camille, dans un emballage recyclé et sans plastique.</p>
+        </fieldset>
+
+        <fieldset class="etape-commande">
+          <legend>03 · Votre paiement</legend>
+          <label class="option-choix">
+            <input type="radio" name="paiement" value="carte" checked>
+            <span><strong>Carte bancaire</strong><br>Visa, Mastercard · Paiement sécurisé</span>
+          </label>
+          <label class="option-choix">
+            <input type="radio" name="paiement" value="paypal">
+            <span><strong>PayPal</strong><br>Utiliser votre compte PayPal</span>
+          </label>
+          <p class="note">Maquette de commande : aucune donnée bancaire ni transaction réelle.</p>
+        </fieldset>
+      </div>
+
+      <aside class="recapitulatif" aria-labelledby="titre-recap">
+        <p class="rubrique">Votre commande</p>
+        <h2 id="titre-recap">Les belles choses arrivent.</h2>
+        <dl class="montants">
+          <div><dt>Bol Aube × 2</dt><dd>76 €</dd></div>
+          <div><dt>Vase Sillage × 1</dt><dd>64 €</dd></div>
+          <div class="separe"><dt>Sous-total des articles</dt><dd>140 €</dd></div>
+          <div><dt>Livraison à domicile</dt><dd>6 €</dd></div>
+        </dl>
+        <p class="note">Encore 10 € d'objets pour profiter de la livraison offerte.</p>
+        <dl class="montants montant-total">
+          <div><dt>Total TTC</dt><dd>146 €</dd></div>
+        </dl>
+        <p class="note">Dont TVA : 24,33 €</p>
+        <div class="code-cadeau">
+          <div class="champ">
+            <label for="code">Code cadeau ou promotionnel</label>
+            <input type="text" id="code" name="code" placeholder="Votre code">
+          </div>
+          <button type="submit" name="action" value="code" class="bouton bouton-secondaire" formnovalidate>OK <img src="images/icones/check.svg" alt="" width="20" height="20"></button>
+        </div>
+        <label class="case">
+          <input type="checkbox" name="cgv" required>
+          J'accepte les <a href="cgv.html">conditions générales de vente</a> et la <a href="confidentialite.html">politique de confidentialité</a>.
+        </label>
+        <button type="submit" name="action" value="valider" class="bouton bouton-large">Valider ma commande — 146 € <img src="images/icones/lock-keyhole.svg" alt="" width="20" height="20"></button>
+        <p class="note">Aperçu uniquement · Aucun paiement ne sera effectué.</p>
+        <p class="note">Une question avant de commander ?<br><a href="mailto:bonjour@atelya.fr">bonjour@atelya.fr</a><br>Nous vous répondons sous 24 h ouvrées.</p>
+      </aside>
+    </form>
+  </main>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

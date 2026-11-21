@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Objets &amp; rencontres – Atelya</title>
+  <meta name="description" content="Atelya réunit objets faits main et ateliers d'artisans près de chez vous.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <main id="contenu">
+
+    <!-- Accroche principale -->
+    <section class="promesse">
+      <div class="editorial">
+        <p class="rubrique">Le goût des choses vraies</p>
+        <h1>Des mains.<br>Des matières.<br>Des histoires.</h1>
+        <p>Des objets façonnés avec soin et des ateliers pour renouer avec le plaisir de créer. Rencontrez l'artisanat, tout simplement.</p>
+        <div class="actions">
+          <a href="boutique.html" class="bouton">Explorer la boutique</a>
+          <a href="ateliers.html" class="bouton bouton-secondaire">Trouver un atelier</a>
+        </div>
+        <p class="note">Fait main en France · Choisi pour durer</p>
+      </div>
+
+      <figure class="savoir-faire">
+        <img src="images/atelier-camille.jpg" alt="Céramiste façonnant un bol dans son atelier">
+        <figcaption>
+          <strong>Dans l'atelier de Camille Roussel</strong><br>
+          Céramiste à Lyon · Depuis 2018
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Engagements -->
+    <section class="engagements" aria-label="Nos engagements">
+      <ul>
+        <li><img src="images/icones/hand.svg" alt="" width="24" height="24"> 100 % fait main</li>
+        <li><img src="images/icones/map-pin.svg" alt="" width="24" height="24"> Des artisans de nos régions</li>
+        <li><img src="images/icones/leaf.svg" alt="" width="24" height="24"> Des matières qui durent</li>
+        <li><img src="images/icones/package.svg" alt="" width="24" height="24"> Liens préservés avec les artisans</li>
+      </ul>
+    </section>
+
+    <!-- Univers / catégories -->
+    <section class="univers">
+      <div class="entete-section">
+        <p class="rubrique">À chaque matière, une émotion</p>
+        <h2>Entrez dans nos univers</h2>
+        <a href="boutique.html" class="voir-plus">Tous les objets ↗</a>
+      </div>
+      <div class="grille">
+        <article class="categorie">
+          <img src="images/univers-ceramique.jpg" alt="Pièces en céramique">
+          <h3><a href="boutique.html?categorie=ceramique">Terre &amp; céramique ↗</a></h3>
+          <p>Des pièces à vivre, chaque jour</p>
+        </article>
+        <article class="categorie">
+          <img src="images/univers-bois.jpg" alt="Objets en bois et vannerie">
+          <h3><a href="boutique.html?categorie=bois">Bois &amp; vannerie ↗</a></h3>
+          <p>La nature, entre vos mains</p>
+        </article>
+        <article class="categorie">
+          <img src="images/univers-textile.jpg" alt="Tissus en lin">
+          <h3><a href="boutique.html?categorie=textile">Lin &amp; textile ↗</a></h3>
+          <p>La douceur des belles fibres</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sélection de créations -->
+    <section class="selection">
+      <div class="entete-section">
+        <p class="rubrique">La sélection de la maison</p>
+        <h2>De petits objets, de grandes histoires</h2>
+        <a href="boutique.html" class="voir-plus">Voir la boutique ↗</a>
+      </div>
+      <div class="grille">
+        <article class="creation">
+          <div class="visuel">
+            <img src="images/bol-aube.jpg" alt="Bol Aube en céramique">
+            <span class="etiquette">Coup de cœur</span>
+            <button type="button" class="favori" aria-label="Ajouter Bol Aube aux favoris">♡</button>
+          </div>
+          <h3><a href="produit.html">Bol Aube</a></h3>
+          <p class="prix">38 €</p>
+          <p class="artisan">Camille Roussel · Lyon</p>
+        </article>
+        <article class="creation">
+          <div class="visuel">
+            <img src="images/vase-sillage.jpg" alt="Vase Sillage en céramique">
+            <button type="button" class="favori" aria-label="Ajouter Vase Sillage aux favoris">♡</button>
+          </div>
+          <h3><a href="produit.html">Vase Sillage</a></h3>
+          <p class="prix">64 €</p>
+          <p class="artisan">Camille Roussel · Lyon</p>
+        </article>
+        <article class="creation">
+          <div class="visuel">
+            <img src="images/planche-noyer.jpg" alt="Planche à découper en noyer">
+            <button type="button" class="favori" aria-label="Ajouter Planche Noyer aux favoris">♡</button>
+          </div>
+          <h3><a href="produit.html">Planche Noyer</a></h3>
+          <p class="prix">52 €</p>
+          <p class="artisan">Julien Morel · Annecy</p>
+        </article>
+        <article class="creation">
+          <div class="visuel">
+            <img src="images/plaid-lisiere.jpg" alt="Plaid Lisière en lin">
+            <button type="button" class="favori" aria-label="Ajouter Plaid Lisière aux favoris">♡</button>
+          </div>
+          <h3><a href="produit.html">Plaid Lisière</a></h3>
+          <p class="prix">95 €</p>
+          <p class="artisan">Jeanne Perrin · Lyon</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portrait d'artisan -->
+    <section class="portrait">
+      <img src="images/camille-roussel.jpg" alt="Portrait de Camille Roussel, céramiste">
+      <div class="histoire">
+        <p class="rubrique">Derrière chaque objet</p>
+        <h2>Camille, la terre<br>et le temps.</h2>
+        <p>À Lyon, Camille Roussel façonne des pièces simples et sensibles. Ses gestes donnent à la terre une seconde vie, et à nos tables un supplément d'âme.</p>
+        <blockquote>« J'aime les objets qui gardent la trace de la main. »</blockquote>
+        <a href="artisan.html" class="bouton">Rencontrer Camille</a>
+      </div>
+    </section>
+
+    <!-- Ateliers / événements -->
+    <section class="ateliers">
+      <div class="entete-section">
+        <p class="rubrique">Et si vous essayiez ?</p>
+        <h2>Le plaisir de faire, ensemble</h2>
+        <a href="ateliers.html" class="voir-plus">Tous les ateliers ↗</a>
+      </div>
+      <div class="grille">
+        <article class="atelier">
+          <img src="images/atelier-ceramique.jpg" alt="Atelier de céramique">
+          <p class="theme">Céramique <span class="tarif">65 € / pers.</span></p>
+          <h3>Les mains dans la terre</h3>
+          <p>Lyon 2e · Atelier Roussel<br><time datetime="2026-11-14T10:00">Sam. 14 novembre · 10h–12h30</time></p>
+          <p>4 places restantes · <a href="atelier.html">Découvrir ↗</a></p>
+        </article>
+        <article class="atelier">
+          <img src="images/atelier-tissage.jpg" alt="Atelier de tissage">
+          <p class="theme">Textile <span class="tarif">75 € / pers.</span></p>
+          <h3>Tisser son premier ouvrage</h3>
+          <p>Lyon 1er · Maison Lisière<br><time datetime="2026-11-15T14:00">Dim. 15 novembre · 14h–17h</time></p>
+          <p>6 places restantes · <a href="atelier.html">Découvrir ↗</a></p>
+        </article>
+        <article class="atelier">
+          <img src="images/atelier-bois.jpg" alt="Atelier de sculpture sur bois">
+          <p class="theme">Bois <span class="tarif">59 € / pers.</span></p>
+          <h3>Une cuillère, un morceau de bois</h3>
+          <p>Villeurbanne · L'établi<br><time datetime="2026-11-21T09:30">Sam. 21 novembre · 9h30–12h30</time></p>
+          <p>3 places restantes · <a href="atelier.html">Découvrir ↗</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Étapes -->
+    <section class="etapes">
+      <p class="rubrique">Votre prochaine parenthèse</p>
+      <h2>De la curiosité au premier geste</h2>
+      <ol>
+        <li>
+          <h3>Trouvez votre atelier</h3>
+          <p>Une ville, une matière, une envie. Choisissez une expérience près de chez vous.</p>
+        </li>
+        <li>
+          <h3>Réservez votre place</h3>
+          <p>Sélectionnez votre session et venez seul, à deux ou entre amis.</p>
+        </li>
+        <li>
+          <h3>Créez, tout simplement</h3>
+          <p>L'artisan vous accompagne. Vous repartez avec un savoir-faire et votre création.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Journal -->
+    <section class="journal">
+      <div class="entete-section">
+        <p class="rubrique">Les carnets d'Atelya</p>
+        <h2>À lire, à sentir, à partager</h2>
+        <a href="journal.html" class="voir-plus">Ouvrir le journal ↗</a>
+      </div>
+      <div class="grille">
+        <article>
+          <img src="images/journal-fait-main.jpg" alt="Mains d'artisan au travail">
+          <p class="rubrique">Savoir-faire · 6 min</p>
+          <h3>Pourquoi le fait main nous touche</h3>
+          <a href="article.html">Lire l'histoire ↗</a>
+        </article>
+        <article>
+          <img src="images/journal-gres.jpg" alt="Pièces en grès">
+          <p class="rubrique">Matières · 4 min</p>
+          <h3>Le grès, une beauté qui dure</h3>
+          <a href="article.html">Lire l'histoire ↗</a>
+        </article>
+        <article>
+          <img src="images/journal-marche.jpg" alt="Marché des créateurs">
+          <p class="rubrique">Rencontres · 5 min</p>
+          <h3>Un dimanche au marché des créateurs</h3>
+          <a href="article.html">Lire l'histoire ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Témoignage (exemple de maquette : à remplacer par un vrai avis) -->
+    <section class="temoignage">
+      <p class="note-etoiles" aria-label="5 étoiles sur 5">★★★★★</p>
+      <blockquote>« Deux heures à oublier le téléphone et à retrouver mes mains. Mon bol est un peu de travers, et je l'aime encore plus. »</blockquote>
+      <p>Louise · Atelier de céramique à Lyon</p>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <p class="rubrique">Gardons le lien</p>
+      <h2>Un peu de beau dans votre boîte mail.</h2>
+      <p>Nouveaux objets, ateliers de saison et histoires d'artisans. Une lettre par mois, pas plus.</p>
+      <form action="#" method="post" class="formulaire-newsletter">
+        <label for="email-newsletter">Votre adresse e-mail</label>
+        <input type="email" id="email-newsletter" name="email" placeholder="vous@exemple.fr" required>
+        <button type="submit">M'inscrire</button>
+      </form>
+      <p class="mention">En vous inscrivant, vous acceptez notre <a href="confidentialite.html">politique de confidentialité</a>. Désinscription à tout moment.</p>
+    </section>
+  </main>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

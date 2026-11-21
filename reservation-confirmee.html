@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réservation confirmée – Atelya</title>
+  <meta name="description" content="Votre place à l'atelier est réservée.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html" aria-current="page">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="confirmation-page">
+      <p class="rubrique">C'est noté !</p>
+      <h1>À très vite à l'atelier.</h1>
+      <p>Votre réservation <strong>R-014</strong> est confirmée. Les informations pratiques vous ont été envoyées par e-mail.</p>
+
+      <div class="colonnes-tableau">
+        <section class="encart" aria-labelledby="titre-rdv">
+          <img src="images/atelier-ceramique.jpg" alt="" width="400" height="220">
+          <h2 id="titre-rdv">Les mains dans la terre</h2>
+          <ul class="recap-details">
+            <li><img src="images/icones/calendar-days.svg" alt="" width="20" height="20"> <time datetime="2026-11-14T10:00">Samedi 14 novembre 2026 · 10h00–12h30</time></li>
+            <li><img src="images/icones/map-pin.svg" alt="" width="20" height="20"> Atelier Roussel · 12 rue de la Charité, 69002 Lyon</li>
+            <li><img src="images/icones/users.svg" alt="" width="20" height="20"> 2 adultes · Louise et Hugo</li>
+          </ul>
+          <dl class="montants montant-total"><div><dt>Total TTC</dt><dd>130 €</dd></div></dl>
+        </section>
+
+        <section class="encart encart-sable" aria-labelledby="titre-preparer">
+          <h2 id="titre-preparer">Pour bien préparer votre venue</h2>
+          <ul>
+            <li>Arrivée conseillée à 9h50.</li>
+            <li>Tenue confortable et chaussures fermées.</li>
+            <li>Terre, outils, tablier et cuissons sont fournis.</li>
+            <li>Votre bol sera à retirer environ 3 semaines plus tard.</li>
+          </ul>
+          <p class="note">Annulation ou report sans frais jusqu'au 7 novembre 2026.</p>
+        </section>
+      </div>
+
+      <div class="actions">
+        <a href="mes-reservations.html" class="bouton">Voir mes réservations <img src="images/icones/arrow-right.svg" alt="" width="20" height="20"></a>
+        <a href="#" class="bouton bouton-secondaire">Ajouter à mon agenda</a>
+        <a href="messagerie.html" class="lien">Une question pour Camille ? ↗</a>
+      </div>
+      <p class="note">Aperçu uniquement · Aucune réservation ni aucun paiement réel n'ont été effectués.</p>
+    </section>
+  </main>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

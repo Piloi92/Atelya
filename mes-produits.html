@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes produits – Atelya</title>
+  <meta name="description" content="Gérez le catalogue de votre atelier : publication, stock et prix.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <div class="espace espace-artisan">
+    <nav class="espace-navigation" aria-label="Espace artisan">
+      <div class="espace-identite">
+        <img src="images/atelier-roussel.jpg" alt="" width="48" height="56">
+        <p><strong>Atelier Roussel</strong><br>Céramique · Lyon</p>
+      </div>
+      <ul class="espace-rubriques">
+          <li><a href="tableau-de-bord.html"><img src="images/icones/layout-dashboard.svg" alt="" width="18" height="18"> Tableau de bord</a></li>
+          <li><a href="mes-produits.html" aria-current="page"><img src="images/icones/package.svg" alt="" width="18" height="18"> Mes produits</a></li>
+          <li><a href="mes-evenements.html"><img src="images/icones/calendar-days.svg" alt="" width="18" height="18"> Mes événements</a></li>
+          <li><a href="messagerie.html"><img src="images/icones/messages-square.svg" alt="" width="18" height="18"> Messagerie</a></li>
+          <li><a href="profil.html"><img src="images/icones/user-round.svg" alt="" width="18" height="18"> Mon profil</a></li>
+      </ul>
+      <p><a class="lien" href="artisan.html">Voir ma page artisan ↗</a></p>
+      <aside class="encart-aide">
+        <h2>Un coup de main ?</h2>
+        <p>Les réponses pour faire vivre votre atelier sur Atelya.</p>
+        <a class="lien" href="faq.html#artisan">Consulter la FAQ ↗</a>
+      </aside>
+    </nav>
+
+    <main id="contenu" class="espace-contenu">
+      <nav class="fil-ariane" aria-label="Fil d'Ariane">
+        <ol>
+          <li><a href="tableau-de-bord.html">Mon espace artisan</a></li>
+          <li aria-current="page">Mes produits</li>
+        </ol>
+      </nav>
+
+      <header class="entete-page">
+        <div>
+          <h1>Mes produits</h1>
+          <p>Les pièces de l'Atelier Roussel, du premier brouillon à la boutique.</p>
+        </div>
+        <a href="ajouter-produit.html" class="bouton">Ajouter un produit <img src="images/icones/plus.svg" alt="" width="17" height="17"></a>
+      </header>
+
+      <dl class="resume">
+        <div><dt>pièces au catalogue</dt><dd>4</dd></div>
+        <div><dt>publiées</dt><dd>2</dd></div>
+        <div><dt>brouillon</dt><dd>1</dd></div>
+        <div><dt>masquée</dt><dd>1</dd></div>
+      </dl>
+
+      <form class="barre-recherche" action="mes-produits.html" method="get" role="search">
+        <div class="recherche">
+          <label for="recherche-produit" class="visuellement-cache">Rechercher par nom de produit</label>
+          <img src="images/icones/search.svg" alt="" width="18" height="18">
+          <input type="search" id="recherche-produit" name="q" placeholder="Rechercher par nom de produit…">
+        </div>
+        <label for="tri" class="visuellement-cache">Trier</label>
+        <select id="tri" name="tri">
+          <option>Trier : plus récents</option>
+          <option>Prix croissant</option>
+        </select>
+      </form>
+
+      <ul class="filtres" aria-label="Filtrer par état">
+        <li><a href="mes-produits.html" aria-current="true">Tous · 4</a></li>
+        <li><a href="mes-produits.html?etat=publie">Publiés · 2</a></li>
+        <li><a href="mes-produits.html?etat=brouillon">Brouillons · 1</a></li>
+        <li><a href="mes-produits.html?etat=masque">Masqués · 1</a></li>
+      </ul>
+
+      <table class="tableau">
+        <caption class="visuellement-cache">Catalogue de l'Atelier Roussel</caption>
+        <thead>
+          <tr>
+            <th scope="col">Produit</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Publication</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cellule-produit"><img src="images/bol-aube.jpg" alt="" width="72" height="72"> <strong>Bol Aube</strong><br><span class="note">Atelier Roussel · Céramique</span></td>
+            <td>38 €</td>
+            <td>12 pièces</td>
+            <td><span class="etiquette etiquette-verte">Publié</span><br><span class="note">Visible en boutique</span></td>
+            <td><a class="lien" href="ajouter-produit.html?id=bol-aube">Modifier ↗</a><br><button type="button" class="bouton-texte lien">Suspendre</button></td>
+          </tr>
+          <tr>
+            <td class="cellule-produit"><img src="images/vase-sillage.jpg" alt="" width="72" height="72"> <strong>Vase Sillage</strong><br><span class="note">Atelier Roussel · Céramique</span></td>
+            <td>64 €</td>
+            <td>5 pièces</td>
+            <td><span class="etiquette etiquette-verte">Publié</span><br><span class="note">Visible en boutique</span></td>
+            <td><a class="lien" href="ajouter-produit.html?id=vase-sillage">Modifier ↗</a><br><button type="button" class="bouton-texte lien">Supprimer</button></td>
+          </tr>
+          <tr>
+            <td class="cellule-produit"><img src="images/tasses-brume.jpg" alt="" width="72" height="72"> <strong>Tasse Brume</strong><br><span class="note">Atelier Roussel · Céramique</span></td>
+            <td>32 €</td>
+            <td>8 pièces</td>
+            <td><span class="etiquette">Brouillon</span><br><span class="note">Non visible</span></td>
+            <td><a class="lien" href="ajouter-produit.html?id=tasse-brume">Modifier ↗</a><br><button type="button" class="bouton-texte lien">Supprimer</button></td>
+          </tr>
+          <tr>
+            <td class="cellule-produit"><img src="images/assiette-rivage.jpg" alt="" width="72" height="72"> <strong>Assiette Rivage</strong><br><span class="note">Atelier Roussel · Céramique</span></td>
+            <td>42 €</td>
+            <td>0 pièce</td>
+            <td><span class="etiquette etiquette-terre">Masqué</span><br><span class="note">Hors boutique · rupture</span></td>
+            <td><a class="lien" href="ajouter-produit.html?id=assiette-rivage">Modifier ↗</a><br><button type="button" class="bouton-texte lien">Supprimer</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <aside class="information" role="note">
+        <img src="images/icones/info.svg" alt="" width="19" height="19">
+        <p><strong>Publier à votre rythme</strong><br>Un brouillon n'est visible que par vous. Un produit masqué reste dans votre catalogue mais n'apparaît plus dans la boutique.</p>
+      </aside>
+    </main>
+  </div>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

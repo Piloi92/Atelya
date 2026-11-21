@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bol Aube – Céramique de Camille Roussel – Atelya</title>
+  <meta name="description" content="Bol en grès moucheté, tourné à la main à Lyon par Camille Roussel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html" aria-current="page">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <nav class="fil-ariane" aria-label="Fil d'Ariane">
+      <ol>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="boutique.html">La boutique</a></li>
+        <li><a href="boutique.html?categorie=ceramique">Céramique</a></li>
+        <li aria-current="page">Bol Aube</li>
+      </ol>
+    </nav>
+
+    <div class="fiche-produit">
+      <section class="galerie-produit" aria-label="Photos du produit">
+        <img src="images/bol-aube.jpg" alt="Bol Aube, vue d'ensemble" width="620" height="590" class="image-principale">
+        <ul class="vignettes">
+          <li><button type="button"><img src="images/bol-aube-1.jpg" alt="Voir le détail de l'émail" width="200" height="130"></button></li>
+          <li><button type="button"><img src="images/bol-aube-2.jpg" alt="Voir le bol de profil" width="200" height="130"></button></li>
+          <li><button type="button"><img src="images/bol-aube-3.jpg" alt="Voir le bol sur une table dressée" width="200" height="130"></button></li>
+        </ul>
+        <p class="note">Chaque pièce est unique · De légères variations font toute sa beauté.</p>
+      </section>
+
+      <section class="infos-produit">
+        <p class="rubrique">Collection Aube · Céramique</p>
+        <h1>Bol Aube</h1>
+        <p><a class="lien" href="artisan.html">Par Camille Roussel · Lyon ↗</a></p>
+        <p class="prix-produit"><strong>38 €</strong> <span aria-label="Note de 4,9 sur 5, 24 avis">★★★★★ 4,9/5 · 24 avis</span></p>
+        <p>Un bol généreux, tourné à la main, pour les petits déjeuners qui prennent leur temps. Son grès moucheté et son émail ivoire révèlent le charme des choses imparfaites.</p>
+
+        <form action="panier.html" method="post">
+          <fieldset class="finitions">
+            <legend>Finition : ivoire moucheté</legend>
+            <label class="pastille pastille-ivoire"><input type="radio" name="finition" value="ivoire" checked><span class="visuellement-cache">Ivoire moucheté</span></label>
+            <label class="pastille pastille-terre"><input type="radio" name="finition" value="terre"><span class="visuellement-cache">Terre cuite</span></label>
+            <label class="pastille pastille-sauge"><input type="radio" name="finition" value="sauge"><span class="visuellement-cache">Vert sauge</span></label>
+          </fieldset>
+          <p class="stock">● En stock · 6 pièces disponibles</p>
+          <div class="achat">
+            <div class="quantite">
+              <button type="button" aria-label="Diminuer la quantité">−</button>
+              <label for="quantite" class="visuellement-cache">Quantité</label>
+              <input type="number" id="quantite" name="quantite" value="1" min="1" max="6">
+              <button type="button" aria-label="Augmenter la quantité">+</button>
+            </div>
+            <button type="submit" class="bouton">Ajouter au panier — 38 €</button>
+          </div>
+        </form>
+
+        <aside class="information" role="note">
+          <p>Expédié sous 3 à 5 jours ouvrés depuis l'atelier. Livraison à domicile : 6 € · Offerte dès 150 €.</p>
+        </aside>
+
+        <dl class="caracteristiques">
+          <dt>Matière</dt><dd>Grès de Bourgogne, émail alimentaire</dd>
+          <dt>Dimensions</dt><dd>Ø 15 cm · H 7 cm · 450 ml</dd>
+          <dt>Fabrication</dt><dd>Tourné, émaillé et cuit à Lyon</dd>
+          <dt>Entretien</dt><dd>Lave-vaisselle et micro-ondes adaptés</dd>
+        </dl>
+      </section>
+    </div>
+
+    <section class="portrait">
+      <img src="images/camille-roussel.jpg" alt="Camille Roussel dans son atelier" width="410" height="340">
+      <div class="histoire">
+        <p class="rubrique">Les mains derrière le bol</p>
+        <h2>Camille Roussel, céramiste à Lyon</h2>
+        <p>Dans son atelier de la Presqu'île, Camille travaille le grès en petites séries depuis 2018. Chaque Bol Aube passe entre ses mains : tournage, séchage lent, émaillage et deux cuissons. Un objet quotidien, pensé pour traverser les années.</p>
+        <div class="actions">
+          <a href="artisan.html" class="bouton bouton-secondaire">Découvrir son atelier <img src="images/icones/arrow-right.svg" alt="" width="20" height="20"></a>
+          <a href="atelier.html" class="bouton">Créer un bol avec Camille <img src="images/icones/arrow-right.svg" alt="" width="20" height="20"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="selection" aria-labelledby="titre-suggestions">
+      <div class="entete-section">
+        <div>
+          <p class="rubrique">Sur la même table</p>
+          <h2 id="titre-suggestions">Des pièces qui se répondent</h2>
+        </div>
+        <a class="voir-plus" href="boutique.html?collection=aube">Toute la collection ↗</a>
+      </div>
+      <ul class="grille grille-produits">
+        <li>
+          <article class="creation">
+            <img src="images/vase-sillage.jpg" alt="Vase Sillage en céramique" width="300" height="300">
+            <h3><a href="produit.html">Vase Sillage</a></h3>
+            <p class="prix">64 €</p>
+            <p class="artisan">Camille Roussel · Lyon</p>
+          </article>
+        </li>
+        <li>
+          <article class="creation">
+            <img src="images/tasses-brume.jpg" alt="Duo de tasses Brume" width="300" height="300">
+            <h3><a href="produit.html">Duo de tasses Brume</a></h3>
+            <p class="prix">42 €</p>
+            <p class="artisan">Camille Roussel · Lyon</p>
+          </article>
+        </li>
+        <li>
+          <article class="creation">
+            <img src="images/assiette-rivage.jpg" alt="Assiette Rivage en céramique" width="300" height="300">
+            <h3><a href="produit.html">Assiette Rivage</a></h3>
+            <p class="prix">42 €</p>
+            <p class="artisan">Camille Roussel · Lyon</p>
+          </article>
+        </li>
+        <li>
+          <article class="creation">
+            <img src="images/planche-noyer.jpg" alt="Planche à découper en noyer" width="300" height="300">
+            <h3><a href="produit.html">Planche Noyer</a></h3>
+            <p class="prix">52 €</p>
+            <p class="artisan">Julien Morel · Annecy</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

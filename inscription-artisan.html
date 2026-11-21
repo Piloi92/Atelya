@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Créer un compte artisan – Atelya</title>
+  <meta name="description" content="Rejoignez Atelya : vendez vos créations et proposez vos ateliers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <div class="authentification">
+      <section class="auth-visuel">
+        <p class="rubrique">Une place pour vos gestes</p>
+        <h2>Faites grandir votre atelier.</h2>
+        <p>Partagez vos créations, ouvrez vos portes et rencontrez celles et ceux qui aiment le beau fait main.</p>
+        <img src="images/artisane-tour.jpg" alt="Artisane au tour de potier" width="440" height="500">
+        <h3>Moins de distance. Plus de liens.</h3>
+        <p>Votre espace réunit vos produits, vos événements et les échanges avec vos clients.</p>
+        <a class="lien" href="faq.html#artisan">Des questions ? Consultez la FAQ ↗</a>
+      </section>
+
+      <section class="auth-formulaire">
+        <nav class="choix-profil" aria-label="Type de compte">
+          <a href="inscription-client.html">Je suis client</a>
+          <a href="inscription-artisan.html" aria-current="page">Je suis artisan</a>
+        </nav>
+        <h1>Créer mon compte artisan</h1>
+        <p>Les champs marqués d'un * sont obligatoires. Vos informations professionnelles servent à préparer votre présence sur Atelya.</p>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>01 · Votre identité</legend>
+            <div class="champs-ligne">
+              <div class="champ">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" autocomplete="given-name" required>
+              </div>
+              <div class="champ">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="family-name" required>
+              </div>
+            </div>
+            <div class="champs-ligne">
+              <div class="champ">
+                <label for="email">Adresse e-mail *</label>
+                <input type="email" id="email" name="email" placeholder="atelier@exemple.com" autocomplete="email" required>
+              </div>
+              <div class="champ">
+                <label for="telephone">Numéro de téléphone *</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro professionnel" autocomplete="tel" required>
+              </div>
+            </div>
+            <div class="champ">
+              <label for="mot-de-passe">Mot de passe *</label>
+              <div class="mot-de-passe">
+                <input type="password" id="mot-de-passe" name="mot_de_passe" minlength="12" autocomplete="new-password" required>
+                <button type="button" aria-controls="mot-de-passe" aria-pressed="false">Voir</button>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>02 · Votre atelier</legend>
+            <div class="champ">
+              <label for="atelier">Nom de l'atelier / nom commercial</label>
+              <input type="text" id="atelier" name="atelier" placeholder="Le nom que vos clients découvriront" autocomplete="organization">
+            </div>
+            <div class="champ">
+              <label for="adresse">Adresse postale *</label>
+              <input type="text" id="adresse" name="adresse" placeholder="Numéro et nom de la voie" autocomplete="address-line1" required>
+            </div>
+            <div class="champ">
+              <label for="complement">Complément d'adresse</label>
+              <input type="text" id="complement" name="complement" placeholder="Bâtiment, étage, lieu-dit…" autocomplete="address-line2">
+            </div>
+            <div class="champs-ligne">
+              <div class="champ">
+                <label for="code-postal">Code postal *</label>
+                <input type="text" id="code-postal" name="code_postal" placeholder="Ex. 69002" inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code" required>
+              </div>
+              <div class="champ">
+                <label for="ville">Ville *</label>
+                <input type="text" id="ville" name="ville" placeholder="Votre ville" autocomplete="address-level2" required>
+              </div>
+            </div>
+            <div class="champs-ligne">
+              <div class="champ">
+                <label for="pays">Pays *</label>
+                <select id="pays" name="pays" autocomplete="country-name">
+                  <option>France</option>
+                  <option>Belgique</option>
+                  <option>Suisse</option>
+                </select>
+              </div>
+              <div class="champ">
+                <label for="siret">Numéro SIRET * · 14 chiffres</label>
+                <input type="text" id="siret" name="siret" placeholder="Saisir vos 14 chiffres" inputmode="numeric" pattern="[0-9]{14}" aria-describedby="aide-siret" required>
+              </div>
+            </div>
+            <aside class="information" role="note" id="aide-siret">
+              <p><strong>Votre identité professionnelle</strong><br>Le SIRET identifie votre établissement. Retrouvez-le sur votre avis de situation Sirene.</p>
+            </aside>
+          </fieldset>
+
+          <label class="case">
+            <input type="checkbox" name="cgu" required>
+            J'accepte les <a href="cgu.html">conditions générales d'utilisation artisan</a> et la <a href="confidentialite.html">politique de confidentialité</a>.
+          </label>
+          <button type="submit" class="bouton bouton-large">Créer mon compte artisan <img src="images/icones/arrow-right.svg" alt="" width="17" height="17"></button>
+          <p>Déjà de la maison ? <a class="lien" href="connexion.html">Se connecter</a></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

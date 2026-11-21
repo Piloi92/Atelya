@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les inscrits – Les mains dans la terre – Atelya</title>
+  <meta name="description" content="Liste des participants inscrits à une session d'atelier.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <div class="espace espace-artisan">
+    <nav class="espace-navigation" aria-label="Espace artisan">
+      <div class="espace-identite">
+        <img src="images/atelier-roussel.jpg" alt="" width="48" height="56">
+        <p><strong>Atelier Roussel</strong><br>Céramique · Lyon</p>
+      </div>
+      <ul class="espace-rubriques">
+          <li><a href="tableau-de-bord.html"><img src="images/icones/layout-dashboard.svg" alt="" width="18" height="18"> Tableau de bord</a></li>
+          <li><a href="mes-produits.html"><img src="images/icones/package.svg" alt="" width="18" height="18"> Mes produits</a></li>
+          <li><a href="mes-evenements.html" aria-current="page"><img src="images/icones/calendar-days.svg" alt="" width="18" height="18"> Mes événements</a></li>
+          <li><a href="messagerie.html"><img src="images/icones/messages-square.svg" alt="" width="18" height="18"> Messagerie</a></li>
+          <li><a href="profil.html"><img src="images/icones/user-round.svg" alt="" width="18" height="18"> Mon profil</a></li>
+      </ul>
+      <p><a class="lien" href="artisan.html">Voir ma page artisan ↗</a></p>
+      <aside class="encart-aide">
+        <h2>Un coup de main ?</h2>
+        <p>Les réponses pour faire vivre votre atelier sur Atelya.</p>
+        <a class="lien" href="faq.html#artisan">Consulter la FAQ ↗</a>
+      </aside>
+    </nav>
+
+    <main id="contenu" class="espace-contenu">
+      <nav class="fil-ariane" aria-label="Fil d'Ariane">
+        <ol>
+          <li><a href="tableau-de-bord.html">Mon espace artisan</a></li>
+          <li><a href="mes-evenements.html">Mes événements</a></li>
+          <li><a href="modifier-evenement.html">Les mains dans la terre</a></li>
+          <li aria-current="page">Inscrits</li>
+        </ol>
+      </nav>
+
+      <header class="entete-page">
+        <div>
+          <h1>Les inscrits</h1>
+          <p>Les mains dans la terre · Atelier Roussel · Lyon</p>
+        </div>
+        <a href="#" class="bouton bouton-secondaire" download>Exporter en CSV <img src="images/icones/download.svg" alt="" width="17" height="17"></a>
+      </header>
+
+      <section class="session-choisie" aria-labelledby="titre-session">
+        <img src="images/atelier-ceramique.jpg" alt="" width="160" height="128">
+        <div>
+          <p><span class="etiquette etiquette-verte">Session publiée</span></p>
+          <h2 id="titre-session"><time datetime="2026-11-14">Samedi 14 novembre 2026</time></h2>
+          <p>10h00–12h30 · 65 € / personne<br>12 rue de la Charité, 69002 Lyon</p>
+        </div>
+        <form action="inscrits-evenement.html" method="get">
+          <label for="session" class="visuellement-cache">Changer de session</label>
+          <select id="session" name="session">
+            <option value="2026-11-14" selected>Sam. 14 novembre · 10h00</option>
+            <option value="2026-11-21">Sam. 21 novembre · 14h00</option>
+            <option value="2026-11-28">Sam. 28 novembre · 10h00</option>
+          </select>
+          <button type="submit" class="bouton bouton-secondaire">Changer de session</button>
+        </form>
+      </section>
+
+      <dl class="indicateurs">
+        <div><dt>personnes inscrites</dt><dd>4</dd></div>
+        <div><dt>réservations confirmées</dt><dd>3</dd></div>
+        <div><dt>places occupées</dt><dd>4 / 8</dd></div>
+        <div><dt>places restantes</dt><dd>4</dd></div>
+      </dl>
+
+      <aside class="information" role="note">
+        <img src="images/icones/info.svg" alt="" width="19" height="19">
+        <div>
+          <p><strong>Des coordonnées d'exemple uniquement</strong></p>
+          <p>Les quatre noms et les adresses en example.com sont fictifs. Louise et Thomas partagent une réservation de 2 places : le tableau compte bien 4 personnes pour 3 réservations.</p>
+        </div>
+      </aside>
+
+      <div class="barre-recherche">
+        <form class="recherche" action="inscrits-evenement.html" method="get" role="search">
+          <label for="recherche-participant" class="visuellement-cache">Rechercher un participant</label>
+          <img src="images/icones/search.svg" alt="" width="18" height="18">
+          <input type="search" id="recherche-participant" name="q" placeholder="Rechercher un participant, un e-mail…">
+        </form>
+        <a href="messagerie.html" class="bouton">Contacter les 4 participants <img src="images/icones/mail.svg" alt="" width="17" height="17"></a>
+      </div>
+
+      <ul class="filtres" aria-label="Filtrer les participants">
+        <li><a href="inscrits-evenement.html" aria-current="true">Tous · 4</a></li>
+        <li><a href="inscrits-evenement.html?etat=confirme">Confirmés · 4</a></li>
+        <li><a href="inscrits-evenement.html?etat=present">Présents · 0</a></li>
+        <li><a href="inscrits-evenement.html?etat=absent">Absents · 0</a></li>
+      </ul>
+
+      <table class="tableau">
+        <caption class="visuellement-cache">Liste des participants</caption>
+        <thead>
+          <tr>
+            <th scope="col">Participant &amp; contact</th>
+            <th scope="col">Réservation</th>
+            <th scope="col">Place</th>
+            <th scope="col">Réservation / présence</th>
+            <th scope="col">Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="avatar" aria-hidden="true">LB</span> <strong>Louise Bernard</strong><br><a href="mailto:louise.bernard@example.com">louise.bernard@example.com</a></td>
+            <td><strong>R-014 · titulaire</strong><br>2 places réservées</td>
+            <td>1</td>
+            <td><span class="etiquette etiquette-verte">Confirmée</span><br>Présence : à venir</td>
+            <td><a class="lien" href="messagerie.html">Écrire ↗</a></td>
+          </tr>
+          <tr>
+            <td><span class="avatar" aria-hidden="true">TB</span> <strong>Thomas Bernard</strong><br><a href="mailto:thomas.bernard@example.com">thomas.bernard@example.com</a></td>
+            <td><strong>R-014 · accompagnant</strong><br>Inclus dans les 2 places</td>
+            <td>1</td>
+            <td><span class="etiquette etiquette-verte">Confirmée</span><br>Présence : à venir</td>
+            <td><a class="lien" href="messagerie.html">Écrire ↗</a></td>
+          </tr>
+          <tr>
+            <td><span class="avatar" aria-hidden="true">ML</span> <strong>Manon Leroy</strong><br><a href="mailto:manon.leroy@example.com">manon.leroy@example.com</a></td>
+            <td><strong>R-015 · titulaire</strong><br>1 place réservée</td>
+            <td>1</td>
+            <td><span class="etiquette etiquette-verte">Confirmée</span><br>Présence : à venir</td>
+            <td><a class="lien" href="messagerie.html">Écrire ↗</a></td>
+          </tr>
+          <tr>
+            <td><span class="avatar" aria-hidden="true">AG</span> <strong>Alex Garnier</strong><br><a href="mailto:alex.garnier@example.com">alex.garnier@example.com</a></td>
+            <td><strong>R-016 · titulaire</strong><br>1 place réservée</td>
+            <td>1</td>
+            <td><span class="etiquette etiquette-verte">Confirmée</span><br>Présence : à venir</td>
+            <td><a class="lien" href="messagerie.html">Écrire ↗</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="suite">
+        <a class="lien" href="mes-evenements.html">← Retour à mes événements</a>
+        <p class="note">Les présences seront à renseigner le jour de l'atelier. L'export est réservé à la préparation de cette session.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

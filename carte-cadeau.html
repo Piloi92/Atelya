@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carte cadeau – Atelya</title>
+  <meta name="description" content="Offrez une carte cadeau Atelya, valable sur les objets et les ateliers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="presentation">
+      <div>
+        <nav class="fil-ariane" aria-label="Fil d'Ariane">
+          <ol>
+            <li><a href="index.html">Accueil</a></li>
+            <li aria-current="page">Carte cadeau</li>
+          </ol>
+        </nav>
+        <p class="rubrique">Offrir un moment, pas seulement un objet</p>
+        <h1>Une expérience qui reste.</h1>
+        <p>Avec la carte cadeau, laissez vos proches choisir le savoir-faire qui leur donne envie : un objet de la boutique ou une place dans un atelier.</p>
+      </div>
+      <img src="images/carte-cadeau.jpg" alt="Carte cadeau Atelya posée près d'un bol en grès" width="310" height="240">
+    </section>
+
+    <div class="commande">
+      <form class="commande-saisie" action="panier.html" method="post">
+        <fieldset class="etape-commande">
+          <legend>01 · Choisissez un montant</legend>
+          <div class="choix-sessions">
+            <label class="option-choix"><input type="radio" name="montant" value="40"> <strong>40 €</strong></label>
+            <label class="option-choix"><input type="radio" name="montant" value="65" checked> <strong>65 €</strong> <span>Un atelier découverte</span></label>
+            <label class="option-choix"><input type="radio" name="montant" value="100"> <strong>100 €</strong></label>
+          </div>
+          <div class="champ">
+            <label for="montant-libre">Ou un montant libre (20 à 300 €)</label>
+            <input type="number" id="montant-libre" name="montant_libre" min="20" max="300" step="5">
+          </div>
+        </fieldset>
+
+        <fieldset class="etape-commande">
+          <legend>02 · Personnalisez</legend>
+          <div class="champs-ligne">
+            <div class="champ">
+              <label for="destinataire">Prénom du destinataire *</label>
+              <input type="text" id="destinataire" name="destinataire" required>
+            </div>
+            <div class="champ">
+              <label for="email-destinataire">E-mail du destinataire</label>
+              <input type="email" id="email-destinataire" name="email_destinataire" aria-describedby="aide-envoi">
+            </div>
+          </div>
+          <p id="aide-envoi" class="note">Laissez vide pour recevoir la carte vous-même et l'imprimer.</p>
+          <div class="champ">
+            <label for="message-cadeau">Votre message</label>
+            <textarea id="message-cadeau" name="message" rows="4" maxlength="300" placeholder="Pour ton prochain beau geste…"></textarea>
+          </div>
+          <div class="champ">
+            <label for="date-envoi">Date d'envoi</label>
+            <input type="date" id="date-envoi" name="date_envoi">
+          </div>
+        </fieldset>
+
+        <button type="submit" class="bouton">Ajouter au panier <img src="images/icones/arrow-right.svg" alt="" width="20" height="20"></button>
+      </form>
+
+      <aside class="recapitulatif">
+        <h2>Bon à savoir</h2>
+        <ul>
+          <li>Valable 1 an sur tous les objets et ateliers.</li>
+          <li>Utilisable en plusieurs fois.</li>
+          <li>Envoi par e-mail, à la date de votre choix.</li>
+        </ul>
+        <p>Le code se saisit dans le panier, champ « Code cadeau ou promotionnel ».</p>
+        <a class="lien" href="faq.html">Une question ? FAQ ↗</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le journal – Atelya</title>
+  <meta name="description" content="Les carnets d'Atelya : savoir-faire, matières et rencontres d'artisans.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="annonce">Des objets qui ont une âme · Des rencontres qui laissent une trace</p>
+
+  <header class="entete">
+    <div class="entete-principale">
+      <a href="index.html" class="marque">
+        <img src="images/logo-atelya.png" alt="Atelya" width="160" height="82">
+        <span class="signature">Objets &amp; rencontres</span>
+      </a>
+
+      <button type="button" class="bouton-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+
+      <nav class="menu" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html" aria-current="page">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <ul class="outils">
+        <li><a href="boutique.html#recherche" aria-label="Rechercher"><img src="images/icones/search.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="mon-compte.html" aria-label="Mon compte"><img src="images/icones/user-round.svg" alt="" width="17" height="17"></a></li>
+        <li><a href="panier.html" aria-label="Mon panier, 3 articles"><img src="images/icones/shopping-bag.svg" alt="" width="17" height="17"> <span class="compteur">3</span></a></li>
+      </ul>
+    </div>
+
+    <nav class="vie-maison" aria-label="Vie de la maison">
+      <ul class="vie-maison-liens">
+        <li><a href="forum.html">Forum de la communauté</a></li>
+        <li><a href="faq.html">Questions fréquentes</a></li>
+        <li><a href="messagerie.html">Messagerie</a></li>
+      </ul>
+      <p class="vie-maison-compte"><a href="connexion.html">Connexion</a> / <a href="inscription-client.html">Créer un compte</a></p>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="presentation">
+      <div>
+        <nav class="fil-ariane" aria-label="Fil d'Ariane">
+          <ol>
+            <li><a href="index.html">Accueil</a></li>
+            <li aria-current="page">Le journal</li>
+          </ol>
+        </nav>
+        <p class="rubrique">Les carnets d'Atelya</p>
+        <h1>À lire, à sentir, à partager.</h1>
+        <p>Des histoires de gestes et de matières, des portraits d'artisans et des conseils pour faire durer les belles choses.</p>
+      </div>
+    </section>
+
+    <nav class="categories" aria-label="Rubriques du journal">
+      <ul>
+        <li><a href="journal.html" aria-current="true">Tous les articles</a></li>
+        <li><a href="journal.html?rubrique=savoir-faire">Savoir-faire</a></li>
+        <li><a href="journal.html?rubrique=matieres">Matières</a></li>
+        <li><a href="journal.html?rubrique=rencontres">Rencontres</a></li>
+      </ul>
+    </nav>
+
+    <article class="article-une">
+      <img src="images/journal-fait-main.jpg" alt="Mains d'artisan au travail" width="760" height="460">
+      <div>
+        <p class="rubrique">À la une · Savoir-faire · 6 min</p>
+        <h2><a href="article.html">Pourquoi le fait main nous touche</a></h2>
+        <p>Une légère irrégularité, la trace d'un doigt dans l'émail : ce qui rend un objet fait main si attachant tient souvent à ses imperfections.</p>
+        <p class="note"><time datetime="2026-11-12">12 novembre 2026</time> · Par l'équipe Atelya</p>
+        <a href="article.html" class="bouton">Lire l'histoire <img src="images/icones/arrow-right.svg" alt="" width="20" height="20"></a>
+      </div>
+    </article>
+
+    <section aria-labelledby="titre-articles">
+      <h2 id="titre-articles" class="visuellement-cache">Tous les articles</h2>
+      <ul class="grille">
+        <li>
+          <article class="carte-article">
+            <img src="images/journal-gres.jpg" alt="Pièces en grès" width="400" height="260">
+            <p class="rubrique">Matières · 4 min</p>
+            <h3><a href="article.html">Le grès, une beauté qui dure</a></h3>
+            <p>Cuit à haute température, le grès est solide, dense et parfait pour la table de tous les jours.</p>
+          </article>
+        </li>
+        <li>
+          <article class="carte-article">
+            <img src="images/journal-marche.jpg" alt="Marché des créateurs" width="400" height="260">
+            <p class="rubrique">Rencontres · 5 min</p>
+            <h3><a href="article.html">Un dimanche au marché des créateurs</a></h3>
+            <p>Place de la Croix-Rousse, nous avons flâné entre les stands et rencontré ceux qui font.</p>
+          </article>
+        </li>
+        <li>
+          <article class="carte-article">
+            <img src="images/journal-lin.jpg" alt="Linge en lin séchant au soleil" width="400" height="260">
+            <p class="rubrique">Matières · 3 min</p>
+            <h3><a href="article.html">Prendre soin du lin</a></h3>
+            <p>Lavage, séchage, repassage : les gestes simples pour garder la douceur des fibres naturelles.</p>
+          </article>
+        </li>
+        <li>
+          <article class="carte-article">
+            <img src="images/julien-morel.jpg" alt="Julien Morel dans son atelier" width="400" height="260">
+            <p class="rubrique">Rencontres · 7 min</p>
+            <h3><a href="article.html">Julien Morel, le noyer et la patience</a></h3>
+            <p>À Annecy, Julien laisse sécher son bois deux ans avant de le travailler. Portrait.</p>
+          </article>
+        </li>
+        <li>
+          <article class="carte-article">
+            <img src="images/journal-osier.jpg" alt="Bottes d'osier" width="400" height="260">
+            <p class="rubrique">Savoir-faire · 5 min</p>
+            <h3><a href="article.html">De la saule au panier</a></h3>
+            <p>Récolte, tri, trempage, tressage : l'osier suit le rythme des saisons.</p>
+          </article>
+        </li>
+        <li>
+          <article class="carte-article">
+            <img src="images/atelier-ceramique.jpg" alt="Atelier de céramique" width="400" height="260">
+            <p class="rubrique">Savoir-faire · 4 min</p>
+            <h3><a href="article.html">Premier atelier : ce qu'il faut savoir</a></h3>
+            <p>Tenue, horaires, création à récupérer : nos conseils pour profiter de votre première séance.</p>
+          </article>
+        </li>
+      </ul>
+      <nav class="pagination" aria-label="Pagination">
+        <ul>
+          <li><a href="journal.html?page=1" aria-current="page">1</a></li>
+          <li><a href="journal.html?page=2">2</a></li>
+          <li><a href="journal.html?page=2" aria-label="Page suivante">→</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="newsletter">
+      <p class="rubrique">Gardons le lien</p>
+      <h2>Un peu de beau dans votre boîte mail.</h2>
+      <p>Nouveaux objets, ateliers de saison et histoires d'artisans. Une lettre par mois, pas plus.</p>
+      <form action="#" method="post" class="formulaire-newsletter">
+        <label for="email-newsletter">Votre adresse e-mail</label>
+        <input type="email" id="email-newsletter" name="email" placeholder="vous@exemple.fr" required>
+        <button type="submit">M'inscrire</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pied-de-page">
+    <div class="pied-informations">
+      <div class="pied-identite">
+        <p class="marque">
+          <img src="images/logo-atelya.png" alt="Atelya" width="70" height="45">
+          <span class="signature">Objets &amp; rencontres</span>
+        </p>
+        <p>Le beau fait main, le plaisir de faire ensemble. Une maison pour les savoir-faire d'ici.</p>
+        <p class="reseaux"><a href="#">Instagram</a> · <a href="#">Pinterest</a></p>
+      </div>
+
+      <nav aria-labelledby="pied-explorer">
+        <h2 id="pied-explorer">Explorer</h2>
+        <ul>
+          <li><a href="boutique.html">La boutique</a></li>
+          <li><a href="ateliers.html">Les ateliers</a></li>
+          <li><a href="artisans.html">Nos artisans</a></li>
+          <li><a href="journal.html">Le journal</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-ecoute">
+        <h2 id="pied-ecoute">À votre écoute</h2>
+        <ul>
+          <li><a href="faq.html#commandes">Livraison &amp; retours</a></li>
+          <li><a href="faq.html">Questions fréquentes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="carte-cadeau.html">Cartes cadeaux</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-maison">
+        <h2 id="pied-maison">Notre maison</h2>
+        <ul>
+          <li><a href="notre-histoire.html">Notre histoire</a></li>
+          <li><a href="nos-engagements.html">Nos engagements</a></li>
+          <li><a href="inscription-artisan.html">Devenir partenaire</a></li>
+          <li>Lyon, France</li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="pied-espace">
+        <h2 id="pied-espace">Votre espace</h2>
+        <ul>
+          <li><a href="connexion.html">Connexion</a> · <a href="inscription-client.html">Inscription client</a></li>
+          <li><a href="inscription-artisan.html">Devenir artisan</a></li>
+          <li><a href="messagerie.html">Messagerie</a></li>
+          <li><a href="forum.html">Forum de la communauté</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="pied-mentions">
+      <p>© 2026 Atelya — Cultiver les liens, préserver les gestes.</p>
+      <ul>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="cgv.html">CGV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
